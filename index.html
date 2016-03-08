@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Trival Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <header id="masthead">
+    <div class="container">
+      <h1>Ture-or-False Trival!</h1>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1 class="Instructions">The Rules</h1>
+      <p class="Instructions">You'll have 20 seconds to answer all 5 questions.</p>
+      <h2>
+        <button type="button" id="start-button">Start</button>
+      </h2>
+
+          <div id="show-number"></div>
+
+          <p class="question">1. The "Forbidden City" is in Beijing.</p>
+          <ul class="answers">
+          <input type="radio" name="QuestOne" value="True" id="QuestOneT"><label for="QuestOneT">True</label><br/>
+          <input type="radio" name="QuestOne" value="False" id="QuestOneF"><label for="QuestOneF">False</label><br/>
+          </ul>
+   
+          <p class="question">2. An American was the first man in space.</p>
+          <ul class="answers">
+          <input type="radio" name="QuestTwo" value="True" id="QuestTwoT"><label for="QuestTwoT">True</label><br/>
+          <input type="radio" name="QeustTwo" value="False" id="QuestTwoF"><label for="QuestTwoF">False</label><br/>
+          </ul>
+    
+           <p class="question">2. "Cost" is one of the "4 C's" of diamond grading.</p>
+          <ul class="answers">
+          <input type="radio" name="QuestThree" value="True" id="QuestThreeT"><label for="QuestThreeT">True</label><br/>
+          <input type="radio" name="QeustThree" value="False" id="QuestThreeF"><label for="QuestThreeF">False</label><br/>
+          </ul>
+  
+          <p class="question">2. Hurricanes and typhoons are the same thing.</p>
+          <ul class="answers">
+          <input type="radio" name="QuestThree" value="True" id="QuestFourT"><label for="QuestFourT">True</label><br/>
+          <input type="radio" name="QeustThree" value="False" id="QuestFourF"><label for="QuestFourF">False</label><br/>
+          </ul>
+  
+          <p class="question">2. Godfather: Part II was the only film sequel to win an Academy Award for the best picture.</p>
+          <ul class="answers">
+          <input type="radio" name="QuestThree" value="True" id="QuestFiveT"><label for="QuestFiveT">True</label><br/>
+          <input type="radio" name="QeustThree" value="False" id="QuestFiveF"><label for="QuestFiveF">False</label><br/>
+          </ul>
+      <!-- Hidden Buttons and Elements -->
+      <!-- Submit Button -->
+      <button type="button" id="submit">Submit Answers</button>
+      <!-- Results -->
+      <div id="results">
+          <h2> Correct Answers:</h2>
+          <h2> Incorrect Answers:</h2>
+          <h2> Unanswered:</h2>
+
+      </div>
+      <button type="button" id="restart">Play Again</button>
+    </section>
+  </div>
+  <!-- JavaScript File & jQuery Lib -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <script type="text/javascript" src="/js/questions.js"></script>
+</body>
+</html>
